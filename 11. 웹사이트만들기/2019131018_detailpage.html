@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>STAYHERE</title>
+    <style>
+        * {
+                list-style: none;
+                text-decoration: none;
+                border-collapse: collapse;
+                margin: 0;
+                padding: 0;
+                color: white;
+        }
+        .main{
+            width: 100%;
+            height: 86px;
+            background-color: rgb(129, 119, 115);
+        }      
+        .header {
+            display: flex;
+            width: 1280px;
+            margin: auto;
+            height: 86px;
+            background-color: rgb(129, 119, 115);
+        }
+        .mainlogo {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            width: 300px;
+            height: 40px;
+            margin-top: 24px;
+            color: white;
+        }
+        .nav {
+            font-family: 'Noto Sans KR', sans-serif;
+            display: flex;
+            justify-content: flex-end;
+            line-height: 86px;
+            width: calc(1280px - 300px);
+            color: white;
+        }
+        .nav > li {
+            margin-left: 84px;
+            color: white;
+        }
+        .icons {
+            display: flex;
+            width: 1280px;
+            height: 302px;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+        }
+        .icons > li {
+            flex: 1;
+            background-color: rgb(255, 255, 255);
+            margin-top: 49px;
+            height: 302px;
+        }
+        .icons > li:not(:last-child) {
+            margin-right: 20px;
+        }
+        .contents1 {
+            font-family: 'Noto Sans KR', sans-serif;;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+        .contents2 {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 15px;
+            color: rgb(129, 119, 115);
+        }
+        .contents1_bold {
+            font-family: 'Noto Sans KR', sans-serif;;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(63, 51, 43);
+            margin-top: 10px;
+        }
+        .search{
+            position: relative;
+            top: 70px;
+            display: flex;
+            width: 1280px;
+            background: rgb(255, 255, 255);
+            border-radius: 100px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        .search > li {
+            flex: 1;
+            height: 132px;
+        }
+        .search > li > div {
+            text-align: center;
+            margin-top: 37px;
+            height: 57px;
+        }
+        .search > li:not(:last-child) > div {
+            border-right: 1px solid rgb(129, 119, 115);
+        }
+        .icon_img{
+            background-image: url(image5.jpg);
+            width: 1920px;
+            height: 1080px;
+            margin: auto;
+        }
+        .main_contents2 > h3 {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-top: 100px;
+            text-align: center;
+            font-weight: 600;
+            color: rgb(129, 119, 115);
+        }
+        .main_contents2 > h1 {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 600;
+            color: rgb(63, 51, 43);
+        }
+        .main_contents2 > h4 {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-top: 80px;
+            text-align: center;
+            font-weight: 300;
+            color: rgb(129, 119, 115);
+        }
+        .main_contents2 > h5 {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-top: 50px;
+            text-align: center;
+            font-weight: 300;
+            color: rgb(129, 119, 115);
+        }
+        .rooms {
+            display: flex;
+            width: 1280px;
+            height: 302px;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+        }
+        .rooms > li {
+            flex: 1;
+            background-color: rgb(255, 255, 255);
+            margin-top: 49px;
+            height: 302px;
+        }
+        .rooms > li:not(:last-child) {
+            margin-right: 20px;
+        }
+        .contents3 {
+            font-family: 'Noto Sans KR', sans-serif;;
+            font-size: 12px;
+            font-weight: 300;
+            color: rgb(129, 119, 115);
+        }
+        .more {
+            width: 50px;
+            height: 20px;
+            background-color: rgb(129, 119, 115);
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            line-height: 18px;
+            margin-left: 580px;
+            position: relative;
+            top:-20px;
+        }
+        footer {
+            display: flex;
+            font-size: 12px;
+            background-color: rgb(129, 119, 115);
+            margin-top: 400px;
+            padding: 30px;
+        }
+        footer > div:first-child{
+            flex: 3;
+            text-align: center;
+            color: #fff;
+        }
+        footer > div:last-child {
+            flex: 6;
+            color: rgb(189, 183, 180);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="header">
+                <div class="mainlogo">
+                    <a href ="2019131018_mainpage.html">STAY HERE</a>
+                </div>
+                <ul class="nav">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">My page</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="search">
+            <li>
+                <div>
+                    <div class="contents1">스테이 리운</div>
+                    <div class="contents2">전라/남원시</div>
+                 </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">체크인</div>
+                    <div class="contents2">날짜 입력</div>
+                 </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">체크아웃</div>
+                    <div class="contents2">날짜입력</div>
+                 </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">인원</div>
+                    <div class="contents2">인원추가</div>
+                 </div>
+            </li>
+        </ul>
+        <div class="main_contents">
+            <div class="icon_img">
+            </div>
+        </div>
+        <div class="main_contents2">
+        <h3>그리운 날에 누군가를 그리듯</h3>
+        <h1>스테이 리운</h1>
+        <h4>열여섯 춘향이 연못에 비친 보름달 속에 임의 얼굴을 그리며 걸었을 남원의 광한루, 작은 골목 끝을 돌아서면<br>얼굴을 드러내는 희고 단정한 고택이 있습니다. 스테이 리운은 누군가를 그리워하는 마음을 간직한 춘향을 닮은 공간입니다.</h4>
+        <h5>스테이 리운은 본채와 사랑채로 구성되어 있습니다. 두 공간 모두 물을 건너야만 들어갈 수 있는 구조로 독립된 공간에 머무르며 온전히 쉼에<br>집중할 수 있도록 설계되었습니다. 은은하게 흐르는 물소리, 깔끔하고 하얀 담장, 마당의 백일홍 향기와 다도의 차 향기가 공간을 가득 채워<br>머무르는 이의 마음을 편안하게 합니다. 본채는 층고가 높고 통창으로 둘러싸여 개방감을 느낄 수 있습니다.</h5></div>
+        <div class="main_contents2">
+            <h3>ROOMS</h3>
+            <ul class="rooms">
+                <li>
+                    <div class="room_img">
+                        <img src="image6.jpg">
+                    <div class="contents1_bold">본채</div>
+                    <div class="contents2">최대 인원 4명 / 침구 1개</div>
+                    <div class="contents3">기본형 2인 ₩320,000~</div>
+                    <div class="more">more</div>
+                </li>
+                <li>
+                    <div class="room_img">
+                        <img src="image7.jpg">
+                    <div class="contents1_bold">사랑채</div>
+                    <div class="contents2">최대 인원 2명 / 침구 1개</div>
+                    <div class="contents3">기본형 2인 ₩230,000~</div>
+                    <div class="more">more</div>
+                </li>
+            </ul>
+            <footer>
+                <div>
+                    STAY HERE
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores <br> quibusdam eum? Voluptas corrupti quaerat recusandae blanditiis debitis in aspernatur<br>
+                    est sint tenetur, modi odit repudiandae sunt explicabo expedita?<br> Aperiam, possimus.
+                </div>
+            </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>STAY HERE</title>
+    <style>
+        * {
+                list-style: none;
+                text-decoration: none;
+                border-collapse: collapse;
+                margin: 0;
+                padding: 0;
+                color: white;
+        }
+        .main_bg{
+            background-image:url("main.jpg");
+            width: 100%;
+            height: 600px;
+        }
+        .header {
+            display: flex;
+            width: 1280px;
+            margin: auto;
+            height: 86px;
+        }
+        h1 {
+            font-size: 48px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .contents1 {
+            font-family: 'Noto Sans KR', sans-serif;;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+        .contents2 {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 15px;
+            color: rgb(129, 119, 115);
+        }
+        .contents3 {
+            font-family: 'Noto Sans KR', sans-serif;;
+            font-size: 12px;
+            font-weight: 300;
+            color: rgb(129, 119, 115);
+        }
+        .contents1_bold {
+            font-family: 'Noto Sans KR', sans-serif;;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(63, 51, 43);
+            margin-top: 10px;
+        }
+        .mainlogo {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            width: 300px;
+            height: 40px;
+            margin-top: 24px;
+            margin-left: 35px;
+            color: white;
+        }
+        .nav {
+            font-family: 'Noto Sans KR', sans-serif;
+            display: flex;
+            justify-content: flex-end;
+            line-height: 86px;
+            width: calc(1280px - 300px);
+            color: white;
+        }
+        .nav > li {
+            margin-left: 84px;
+            color: white;
+        }
+        .search{
+            position: relative;
+            top:-66px;
+            display: flex;
+            width: 1280px;
+            background: rgb(255, 255, 255);
+            border-radius: 100px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        .search > li {
+            flex: 1;
+            height: 132px;
+        }
+        .search > li > div {
+            text-align: center;
+            margin-top: 37px;
+            height: 57px;
+        }
+        .search > li:not(:last-child) > div {
+            border-right: 1px solid rgb(129, 119, 115);
+        }
+        .main_text{
+            width: 100%;
+            margin: 250px 30px 80px 350px; 
+            text-align: left;
+        }
+        .main_text > h1 {
+            margin-top: 20px;
+        }
+        .main_text > h4 {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: white;
+            margin-inline-end: 50px;
+        }
+        .main_text > h5 {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: white;
+        }
+        .main_contents > h3 {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 600;
+            color: rgb(129, 119, 115);
+        }
+        .icons {
+            display: flex;
+            width: 1280px;
+            height: 302px;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+        }
+        .icons > li {
+            flex: 1;
+            background-color: rgb(255, 255, 255);
+            margin-top: 49px;
+            height: 302px;
+        }
+        .icons > li:not(:last-child) {
+            margin-right: 20px;
+        }
+        .more {
+            width: 50px;
+            height: 20px;
+            background-color: rgb(129, 119, 115);
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            line-height: 18px;
+            margin-left: 360px;
+            position: relative;
+            top:-20px;
+        }
+        .main_contents2 {
+            width: 100%;
+            height: 659px;
+        }
+        .main_contents2 > h3 {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-top: 230px;
+            text-align: center;
+            font-weight: 600;
+            color: rgb(129, 119, 115);
+        }
+        .icons2 {
+            display: flex;
+            width: 1280px;
+            height: 427px;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+        }
+        .icons2 > li {
+            flex: 1;
+            background-color: rgb(255, 255, 255);
+            margin-top: 49px;
+            height: 302px;
+        }
+        .event {
+            width: 200px;
+            height: 30px;
+            background-color: rgb(129, 119, 115);
+            color: white;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 12px;
+            text-align: center;
+            line-height: 28px;
+            margin-left: 1070px;
+            position: relative;
+            top:-60px;
+        }
+        footer {
+            display: flex;
+            font-size: 12px;
+            background-color: rgb(129, 119, 115);
+            margin-top: 200px;
+            padding: 30px;
+        }
+        footer > div:first-child{
+            flex: 3;
+            text-align: center;
+            color: #fff;
+        }
+        footer > div:last-child {
+            flex: 6;
+            color: rgb(189, 183, 180);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="main_bg">
+            <div class="header">
+                <div class="mainlogo">
+                    STAY HERE
+                </div>
+                <ul class="nav">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">My page</a></li>
+                </ul>
+            </div>
+            <div class="main_text">
+                <h4 class = "contents1"> 일상에서 벗어난 <br>낯선 공간의 설레임</h4>
+                <h1>욜스테이</h1>
+                <h5>강원/양양   ₩280,000 ~ ₩360,000</h5>
+            </div>
+        </div>
+    <ul class="search">
+        <li>
+            <div>
+                <div class="contents1">위치</div>
+                <div class="contents2">어디로 여행가세요?</div>
+             </div>
+        </li>
+        <li>
+            <div>
+                <div class="contents1">체크인</div>
+                <div class="contents2">날짜 입력</div>
+             </div>
+        </li>
+        <li>
+            <div>
+                <div class="contents1">체크아웃</div>
+                <div class="contents2">날짜입력</div>
+             </div>
+        </li>
+        <li>
+            <div>
+                <div class="contents1">인원</div>
+                <div class="contents2">인원추가</div>
+             </div>
+        </li>
+    </ul>
+    <div class="main_contents">
+        <h3>요즘 뜨는 인기숙소</h3>
+        <ul class="icons">
+            <li>
+                <div class="icon_img">
+                    <a href="2019131018_detailpage.html"><img src="image1.jpg"></a>
+                </div>
+                <div class="contents1_bold">스테이리운</div>
+                <div class="contents2">애틋한 그리움의 공간</div>
+                <div class="contents3">전라/남원시<br>₩230,000 ~ ₩400,000</div>
+                <a href="2019131018_detailpage.html"><div class="more">more</div></a>
+            </li>
+            <li>
+                <div class="icon_img">
+                    <img src="image2.jpg">
+                </div>
+                <div class="contents1_bold">잔월</div>
+                <div class="contents2">따로 그리고 같이, 서로를 느슨하게 이어주는</div>
+                <div class="contents3">제주/제주시<br>₩600,000 ~ ₩700,000</div>
+                <div class="more">more</div>
+            </li>
+            <li>
+                <div class="icon_img">
+                    <img src="image3.jpg">
+                </div>
+                <div class="contents1_bold">클라우</div>
+                <div class="contents2">구름 위를 떠다니는 듯 한 몽상의 공간</div>
+                <div class="contents3">서울/마포구<br>₩310,000 ~ ₩350,000</div>
+                <div class="more">more</div>
+            </li>
+        </ul>
+    </div>
+    <div class="main_contents2">
+        <h3>EVENT</h3>
+        <ul class="icons2">
+            <li>
+                <div class="icon2_img">
+                    <a href ="2019131018_eventpage.html"><img src="image4.jpg"></a>
+                </div>
+                <div class="contents1_bold">셀로판 비</div>
+                <div class="contents2">다채롭게 채워진 쉼의 공간</div>
+                <div class="contents3">강원/양양군<br>₩170,000 ~ ₩550,000</div>
+                <a href ="2019131018_eventpage.html"><div class="event">댓글 남기고 이벤트 참여하기</div></a>
+            </li>
+        </ul>
+        <footer>
+            <div>
+                STAY HERE
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores <br> quibusdam eum? Voluptas corrupti quaerat recusandae blanditiis debitis in aspernatur<br>
+                est sint tenetur, modi odit repudiandae sunt explicabo expedita?<br> Aperiam, possimus.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
